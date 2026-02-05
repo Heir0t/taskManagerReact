@@ -97,11 +97,13 @@ function App(){
       <VideoOverlay visible={videoVisible} src={videoSrc} onClose={() => setVideoVisible(false)} />
       <div className='w-[500px]'>
            <h1 className='text-3xl text-slate-100 font-bold text-center'>Task Manager</h1>
+             <p className="text-slate-900/15 text-center mt-4">Não crie uma tarefa no dia 07/02/2026</p>
            <AddTaskForm addTask={addTask} />
            <Tasks tasks={tasks} 
            onTaskClick={onTaskClick}
            excludeTask={excludeTask}
            addTask={addTask}/>
+           <p className="text-slate-900/15 text-center mt-4">Não crie uma tarefa no dia 07/02/2026 </p>
       </div>
     </div>
   )
